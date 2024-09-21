@@ -1,0 +1,265 @@
+{
+    "intents":
+    [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hi there", "Is anyone there?", "Hey", "Hola", "Hello", "Good day", "What's Up"],
+            "responses": ["Hello", "Good to see you, How can I help you", "Hi there, how can I help?"]
+        },
+        {
+            "tag": "product_query",
+            "patterns": ["Tell me about {product}", "What is {product}?", "I want details about {product}", "Give me information about {product}", "Tell me about the {product}", "What can you tell me about {product}?"],
+            "responses": ["Let me check the details for you."]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+        },
+        {
+            "tag": "help",
+            "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?", "Can you help me", "please help me", "help me", "help"],
+            "responses": ["I can guide you ", "I can provide support", "Shure! How can I help you?", "Please tell me!"]
+        },
+        {
+            "tag": "invalid",
+            "patterns": ["Marry me", "I love You", "date me", "chat with me", "I am bored", "I Kill you"],
+            "responses": ["Please ask organisation related query."]
+        },
+        {
+            "tag": "noans",
+            "patterns": ["why", "how", "when", "I", "you"],
+            "responses": ["Can't Understand Your Question", "please elaborate your question"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["what is your name?", "what should I call you?", "I am"],
+            "responses": ["I'm Device Care", "Hey! I'm Device Care"]
+        },
+        {
+            "tag": "about",
+            "patterns": ["how you doing?", "how are you", "How about you"],
+            "responses": ["Thanks For Asking! How can I help you?"]
+        },
+        {
+            "tag": "shope_open",
+            "patterns": ["Today is the shop open?", "Is the shop opened today?", "Is open today?", "Is today open?"],
+            "responses": ["Sunday and Public Holidays!", "Yes, We are open"]
+        },
+        {
+            "tag": "shop_close",
+            "patterns": ["When does the shop close?", "What are your closing hours?", "Closing time?"],
+            "responses": ["We close at 8 PM.", "Our shop closes at 8 PM.", "We are closed", "We are closed Today"]
+        },
+        {
+            "tag": "emotions",
+            "patterns": ["How are you feeling?", "Are you happy?", "Are you sad?"],
+            "responses": ["As an AI, I don't have emotions. But thank you for asking!", "I don't experience emotions since I'm an AI, but I'm here to help you.", "Emotions don't apply to me since I'm an AI, but I'm ready to assist you."]
+        },
+        {
+            "tag": "weather",
+            "patterns": ["What's the weather like today?", "Will it rain?", "What's the temperature outside?"],
+            "responses": ["I'm sorry, I don't have real-time weather information. You can check a weather website or app for accurate details.", "I'm not equipped to provide live weather updates. You can check a reliable weather source for the latest information."]
+        },
+        {
+            "tag": "time",
+            "patterns": ["What time is it?", "Do you have the time?", "Can you tell me the current time?"],
+            "responses": ["I don't have access to real-time information, including the current time. Please check your device or a reliable source for the accurate time."]
+        },
+        {
+            "tag": "jokes",
+            "patterns": ["Tell me a joke", "Do you know any jokes?", "Share a funny joke", "Make me laugh"],
+            "responses": ["Sure! Why don't scientists trust atoms? Because they make up everything!", "Here's one for you: Why don't skeletons fight each other? They don't have the guts!", "Here's a joke: What did the ocean say to the shore? Nothing, it just waved!"]
+        },
+        {
+            "tag": "technology",
+            "patterns": [
+              "Tell me about the latest technology",
+              "What is the newest technology?",
+              "I want to know about new tech",
+              "Give me updates on technology"
+            ],
+            "responses": ["I can provide you with the latest technology news and updates. Is there any specific area or topic you're interested in?", "Technology is constantly evolving, and there are always new gadgets and innovations. Let me know your area of interest, and I'll share relevant information.", "Emerging technologies are fascinating. If you have any particular technology in mind or need information about a specific area, feel free to ask."]
+        },
+        {
+            "tag": "books",
+            "patterns": ["Recommend a good book.", "Tell me about popular books.", "What's your favorite book?"],
+            "responses": ["Books offer unique experiences. Let me know your preferred genre or any specific requirements for a book recommendation.", "There are numerous popular books across various genres. If you have any preferences or specific interests, I can suggest suitable books.", "As an AI, I don't have personal favorites, but I can help you find a book based on your interests. What genre or type of book are you looking for?"]
+        },
+        {
+            "tag": "tech news",
+            "patterns": ["What are the latest tech news?", "Tell me about recent technological advancements.", "Do you have any updates on the tech industry?"],
+            "responses": ["The tech industry is constantly evolving with new developments and innovations. If you're interested in the latest tech news, I can provide you with updates on various topics such as artificial intelligence, robotics, gadgets, and more.", "Technological advancements are shaping our world. If you have a specific area of interest within the tech industry or want to know about recent breakthroughs, I'm here to provide you with the latest information.", "Keeping up with tech news can be exciting. Let me know if you have any specific tech-related questions or if there's a particular topic you'd like to explore."]
+        },
+        {
+            "tag": "computer hardware",
+            "patterns": ["What are the essential components of a computer?", "Tell me about the latest computer processors.", "Do you have information on computer hardware upgrades?"],
+            "responses": ["Computer hardware consists of various components that work together to enable the functioning of a computer. If you need information about specific hardware components, such as processors, graphics cards, or memory, feel free to ask.", "The computer hardware industry is constantly evolving. If you're interested in the latest advancements in computer processors, storage devices, or other hardware components, I can provide you with relevant details.", "Upgrading computer hardware can enhance performance and capabilities. If you're considering a hardware upgrade or need advice on selecting the right components, I'm here to assist you."]
+        },
+        {
+            "tag": "pc parts",
+            "patterns": ["What computer parts are currently in stock?", "Do you have computer hardware?", "What computer parts are there?"],
+            "responses": ["What parts do you need?", "What type is required?", ""]
+        },
+        {
+            "tag": "pc parts list",
+            "patterns": ["What computer parts are currently in stock?", "Do you have computer hardware?", "What computer parts are there?", "components" ,"Current item", "please provide me with the current stocks"],
+            "responses": ["VGA, HDD Disk, Ram, Processer"]
+        },
+        {
+            "tag": "VGA",
+            "patterns": ["list of parts", "available parts list", "stock hardwares", "pc parts", "computer parts"],
+            "responses": ["GTX970, GTX1080TI, GTX1660, RTX2080, RTX3070, RTX4090TI"]
+        },
+        {
+            "tag": "RAM",
+            "patterns": ["ram", "ram card", "memory card", "memory"],
+            "responses": ["Desktop Ram or Laptop Ram"]
+        },
+        {
+            "tag": "desktop ram",
+            "patterns": ["desktop ram", "pc ram", "CPU ram"],
+            "responses": ["4GB DDR3, 4GB DDR4, 8GB DDR3, 8GB DDR4, 16GB DDR5, 32GB DDR5"]
+        },
+        {
+            "tag": "lap ram",
+            "patterns": ["lap ram", "mini ram", "notebook ram"],
+            "responses": ["4GB DDR3L, 4GB DDR4, 8GB DDR3L, 8GB DDR4, 16GB DDR5, 32GB DDR5"]
+        },
+        {
+            "tag": "processer",
+            "patterns": ["processer", "CPU", "i7 processer", "i5 processer", "i3 processer","gen"],
+            "responses": ["Intel Core i5, i7, and i9, as well as AMD Ryzen 5 and 7."]
+        },
+        {
+            "tag": "Storage",
+            "patterns": ["storage", "hard drive"],
+            "responses": ["We have both traditional hard drives and solid-state drives (SSDs) in various sizes. Which one are you interested in?"]
+        },
+        {
+            "tag": "ssd",
+            "patterns": ["M.2", "nvme", "ssd", "sata SSD", "msata"],
+            "responses": ["120GB SSD, 240GB SSD, 120GB M.2, 256GB M.2, 500GB M.2, 500GB Nvme, 1TB Nvme"]
+        },
+        {
+            "tag": "desktop hdd",
+            "patterns": ["desktop hdd", "big hdd", "ide hdd", "sata hdd"],
+            "responses": ["500GB, 1TB, 2TB, 4TB, 6TB"]
+        },
+        {
+            "tag": "Motherboard",
+            "patterns": ["motherboard", "mainboard", "board"],
+            "responses": ["Our selection of motherboards includes options from top brands like ASUS, Gigabyte, and MSI. What features are you looking for?"]
+        },
+        {
+            "tag": "ASUS",
+            "patterns": ["ASUS", "ASUS motherboard"],
+            "responses": ["PRIME X370-PRO, PRIME 470-PRO, PRIME 456"]
+        },
+        {
+            "tag": "Gigabyte",
+            "patterns": ["Gigabyte", "gigabyte motherboard"],
+            "responses": ["H410M H V2, B550 UD AC, H610M S2H"]
+        },
+        {
+            "tag": "MSI",
+            "patterns": ["MSI", "msi motherboard"],
+            "responses": ["MEG Z790 GODLIKE, MEG Z790 ACE, MPG Z790 CARBON WIFI"]
+        },
+        {
+            "tag": "Power Supply",
+            "patterns": ["power supply", "PSU"],
+            "responses": ["We offer power supplies with different wattages and efficiency ratings. Let us know your power requirements for a suitable recommendation.", "We have different boards and different generation support boards. Please visit our store."]
+        },
+        {
+            "tag": "Cooling",
+            "patterns": ["cooling", "CPU cooler", "fan"],
+            "responses": ["For cooling solutions, we have air coolers and liquid cooling systems. Which one do you prefer?"]
+        },
+        {
+            "tag": "Peripherals",
+            "patterns": ["peripherals", "accessories"],
+            "responses": ["In addition to PC components, we also offer a range of peripherals like keyboards, mice, monitors, and speakers."]
+        },
+        {
+            "tag": "Operating System",
+            "patterns": ["operating system", "OS"],
+            "responses": ["We provide licensed copies of operating systems such as Windows 10 and macOS. Let us know your preference."]
+        },
+        {
+            "tag": "Networking",
+            "patterns": ["networking", "router", "Wi-Fi"],
+            "responses": ["For networking needs, we have routers, Wi-Fi extenders, and network cables available. What specific requirements do you have?"]
+        },
+        {
+            "tag": "Software",
+            "patterns": ["software", "applications"],
+            "responses": ["We offer a wide range of software applications, including productivity tools, antivirus software, and design applications."]
+        },
+        {
+            "tag": "Motherboard Features",
+            "patterns": ["motherboard features", "mainboard features"],
+            "responses": ["Our motherboards come with a variety of features to cater to different requirements. Some common features include multiple PCIe slots for graphics cards and expansion cards, support for high-speed RAM modules, USB 3.0 and USB-C ports, integrated Wi-Fi and Bluetooth, and advanced cooling solutions. Let us know which features are important to you, and we'll help you find the perfect motherboard."]
+        },
+        {
+            "tag": "Compatibility",
+            "patterns": ["motherboard compatibility", "mainboard compatibility"],
+            "responses": ["When selecting a motherboard, it's important to ensure compatibility with your processor, RAM, and other components. We can help you find a motherboard that is compatible with your preferred processor, supports the desired RAM capacity and speed, and has the necessary connectors for your storage drives and expansion cards. Let us know your specific requirements, and we'll guide you in choosing a compatible motherboard."]
+        },
+        {
+            "tag": "Form Factor",
+            "patterns": ["motherboard form factor", "mainboard form factor"],
+            "responses": ["Motherboards come in different form factors, such as ATX, Micro ATX, and Mini-ITX. The choice of form factor depends on your case size and the number of expansion slots you require. We have motherboards available in various form factors, so you can select one that fits your case and provides the necessary expansion options."]
+        },
+        {
+            "tag": "Gaming Motherboards",
+            "patterns": ["gaming motherboard", "mainboard for gaming"],
+            "responses": ["For gaming enthusiasts, we offer a range of gaming motherboards optimized for performance and features. These motherboards often come with enhanced audio, RGB lighting, high-speed networking capabilities, and support for multiple graphics cards. Let us know your gaming requirements, and we'll recommend a gaming motherboard that will elevate your gaming experience."]
+        },
+        {
+            "tag": "Computer Cases",
+            "patterns": ["computer cases", "pc cases", "chassis"],
+            "responses": ["Browse our collection of computer cases designed to accommodate different form factors and provide optimal airflow for cooling. We have cases in various sizes and styles, including compact cases for space-saving setups and gaming cases with RGB lighting. Let us know your requirements, and we'll help you find a suitable case for your build."]
+        },
+        {
+            "tag": "Monitors",
+            "patterns": ["monitors", "computer screens", "display"],
+            "responses": ["Enhance your visual experience with our range of high-quality monitors. We offer various sizes, resolutions, and panel types to suit different needs, whether it's for gaming, multimedia, or professional work. Let us know your preferences, and we'll help you find the perfect monitor."]
+        },
+        {
+            "tag": "Keyboards",
+            "patterns": ["keyboards", "computer keyboards", "typing devices"],
+            "responses": ["Discover our selection of keyboards designed for comfortable and efficient typing. We have mechanical keyboards, membrane keyboards, and gaming keyboards with customizable features. Let us know your preferences, such as key switch type, layout, and backlighting, and we'll assist you in finding the right keyboard."]
+        },
+        {
+            "tag": "Mice",
+            "patterns": ["mice", "computer mice", "pointing devices"],
+            "responses": ["Find the perfect mouse for your needs from our range of ergonomic and high-precision mice. We have options for gaming, productivity, and general use. Let us know your preferences, such as wired or wireless, DPI sensitivity, and programmable buttons, and we'll help you choose the right mouse."]
+        },
+        {
+            "tag": "Speakers",
+            "patterns": ["speakers", "computer speakers", "audio devices"],
+            "responses": ["Immerse yourself in high-quality sound with our selection of computer speakers. We have options for stereo sound, surround sound, and Bluetooth connectivity. Whether you need speakers for gaming, multimedia, or professional audio, we can recommend the right speakers based on your requirements."]
+        },
+        {
+            "tag": "Networking Devices",
+            "patterns": ["networking devices", "routers", "modems"],
+            "responses": ["Stay connected with our range of networking devices. We offer routers, modems, and range extenders to ensure a reliable and fast internet connection. Let us know your internet speed requirements and coverage area, and we'll help you choose the appropriate networking solution."]
+        },
+        {
+            "tag": "location",
+            "patterns": ["where are you from?", "where are you", "how i came your shpe?","where is it?"],
+            "responses": ["I'm from Online", "Our Shop Online"]
+        }
+    ]
+}
